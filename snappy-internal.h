@@ -40,7 +40,9 @@
 // advanced SSE versions without checking with all the OWNERS.
 #include <emmintrin.h>
 #include <tmmintrin.h>
+#if !defined(__EMSCRIPTEN__)
 #include <x86intrin.h>
+#endif
 #endif
 
 #if SNAPPY_HAVE_NEON
