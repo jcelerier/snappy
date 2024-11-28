@@ -40,7 +40,7 @@
 // advanced SSE versions without checking with all the OWNERS.
 #include <emmintrin.h>
 #include <tmmintrin.h>
-#if !defined(__EMSCRIPTEN__)
+#if !defined(__EMSCRIPTEN__) && !defined(_MSC_VER)
 #include <x86intrin.h>
 #endif
 #endif
